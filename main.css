@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: #FFDBF8;   
+    font-family: 'Courgette', cursive;
+}
+
+#main-section
+{
+    background: #fff;
+    height: 1024px;
+    box-shadow: 0 0 20px #bbb;
+}
+
+.product-type
+{
+    width: 100%;
+    height: 200px;
+    margin: 20px 20px;
+    padding: 0;
+    background: #fff;
+    outline: none;
+}
+
+.col-justify-center
+{
+    display: flex;
+    justify-content: center;
+}
+
+.color-beige
+{
+    border: 5px solid #FFD1CF;
+}
+
+.color-purple
+{
+    border: 5px solid #D1CFFF;
+}
+
+.color-green
+{
+    border: 5px solid #D0FEE2;
+}
+
+/*FFD1CF D1CFFF D0FEE2*/
