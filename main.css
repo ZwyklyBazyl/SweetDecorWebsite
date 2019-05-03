@@ -8,7 +8,7 @@
 
 body
 {
-    background: #FFDBF8;   
+    background: #565759;   
     font-family: 'Courgette', cursive;
 }
 
@@ -16,7 +16,13 @@ body
 {
     background: #fff;
     height: 1024px;
-    box-shadow: 0 0 20px #bbb;
+    box-shadow: 0 0 20px #000000;
+}
+
+#main-flex
+{
+ flex-direction: column;
+    
 }
 
 .product-type
@@ -37,7 +43,7 @@ body
 
 .color-beige
 {
-    border: 5px solid #FFD1CF;
+    border: 5px solid #F2D1CE;
 }
 
 .color-purple
@@ -48,6 +54,44 @@ body
 .color-green
 {
     border: 5px solid #D0FEE2;
+}
+
+ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+li
+{
+    margin: 20px 10px;  
+    appearance: none;
+    border: 2px solid #F2D1CE;
+    color: #F2D1CE;
+    height: 100%;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 24px;
+    transition: all 0.2s linear;
+}
+
+li:hover
+{
+    background: #F2D1CE;
+    border: 2px solid #F2D1CE;
+    color: #565759;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#logo
+{
+    margin: 20px 0;;
+    padding: 0;
 }
 
 /*FFD1CF D1CFFF D0FEE2*/
