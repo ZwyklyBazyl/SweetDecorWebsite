@@ -16,7 +16,73 @@ body
 
 #header-section
 {
+    z-index: 2;
+    position: relative;
     background: #232324;
+   box-shadow: 0 0 10px #000000;
+}
+
+#main-background
+{
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    object-fit: contain;
+    overflow: hidden;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    margin: 0 0 100px 0;
+    padding: 0;
+}
+
+#blur-background
+{
+    width: 110%;
+    height: 110%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;  
+transform: translateX(-10px);
+    filter: brightness(60%) blur(6px);
+    /*
+    -moz-box-shadow: #000 30px 30px 100px;
+    -webkit-box-shadow: #000 30px 30px 100px;
+    box-shadow:#000 30px 30px 100px;
+    */
+    
+}
+
+#blur-background:after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 150px 60px rgba(0,0,0,1);
+}
+
+.box-over-blur
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    font-size: 46px;
+    color: #efdedc;
+    background: rgba(35, 35, 36, 0.5);
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+/*    border-bottom: 3px solid #efdedc;*/
     box-shadow: 0 0 10px #000000;
 }
 
@@ -94,20 +160,10 @@ body
     overflow: hidden;
 }
 
-.candle
-{
-    width: 100%;
-    height: 100%;
-    max-width: 150px;
-    max-height: 200px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-}
-
-
 .region-color:hover
 {
     background: #efdedc;
+    cursor: pointer;
 }
 
 .region-color:hover p
@@ -169,6 +225,8 @@ body
 
 ul
 {
+    z-index: 2;
+    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -177,6 +235,7 @@ ul
 
 li
 {
+    z-index: 2;
     margin: 0;  
     appearance: none;
     color: #efdedc;
