@@ -23,7 +23,7 @@ body
 #main-section
 {
     background: #fff;
-    height: 1024px;
+    height: 100%;
 
 }
 
@@ -64,9 +64,9 @@ body
     and (max-device-width : 768px)
 {
 
-    .region-right
+    .region-right, .region-left
     {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
 }
@@ -82,20 +82,89 @@ body
     width: 70%;
     height: 100%;
     box-shadow: 0 0 10px #232324;
+    border-radius: 4px;
 }
 
 .inside-region
 {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     overflow: hidden;
 }
 
 .candle
 {
     width: 100%;
-    height: auto;
+    height: 100%;
+    max-width: 150px;
+    max-height: 200px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+
+.region-color:hover
+{
+    background: #efdedc;
+}
+
+.region-color:hover p
+{
+    color: #232324;
+}
+
+.region-color
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #232324;
+    transition: all 0.1s linear;
+}
+
+.region-color-right
+{
+
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; 
+}
+
+.region-color p
+{
+    margin: 0;
+    font-size: 24px;   
+    color: #efdedc;
+    transition: all 0.1s linear;
+}
+
+.align-right
+{
+    display: flex;
+    justify-content: flex-end;   
+}
+
+.no-padding
+{
+    padding: 0;   
+}
+
+.text-region
+{
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul
@@ -126,6 +195,14 @@ li:hover
     border: 2px solid #efdedc;
     color: #232324;
     cursor: pointer;
+}
+
+footer
+{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*FFD1CF D1CFFF D0FEE2 565759*/
