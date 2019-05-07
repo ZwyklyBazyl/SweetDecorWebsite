@@ -1,6 +1,6 @@
-const galleryButton = document.getElementById("gallery");
-const priceListButton = document.getElementById("price-list");
-const contactButton = document.getElementById("contact");
+const gallery = document.getElementById("gallery");
+const priceList = document.getElementById("price-list");
+const contact = document.getElementById("contact");
 
 const mainSection = document.getElementById('main-section');
 
@@ -21,9 +21,9 @@ window.addEventListener('scroll', function(event)
                         {
     if(isInViewport(mainSection))
     {
-        galleryButton.classList.add('visible');
-        priceListButton.classList.add('visible');
-        contactButton.classList.add('visible');
+        gallery.classList.add('visible');
+        priceList.classList.add('visible');
+        contact.classList.add('visible');
         
     }
 }, false);
